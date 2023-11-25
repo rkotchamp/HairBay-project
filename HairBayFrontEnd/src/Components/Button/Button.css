@@ -1,0 +1,18 @@
+/* :root {
+    --primary-color: #a8895f;
+    --primary-light-color: #a7895c;
+    --call-to-action-color: #657f4e;
+    --background-color: #0a111d;
+    --text-color: #fff;
+    --light-grey-color: #cbcbcb;
+  }
+   */
+
+.btn {
+  width: 200px;
+  height: 50px;
+  border-radius: 50px;
+  border: none;
+  color: var(--text-color);
+  background-color: var(--call-to-action-color);
+}
