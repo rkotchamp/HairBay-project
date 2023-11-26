@@ -1,3 +1,13 @@
+/* :root {
+    --primary-color: #a8895f;
+    --primary-light-color: #a7895c;
+    --call-to-action-color: #657f4e;
+    --background-color: #0a111d;
+    --text-color: #fff;
+    --light-grey-color: #cbcbcb;
+  }
+   */
+
 .landing-page-content {
   position: relative;
   width: 100%;
@@ -5,6 +15,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  z-index: 0;
 }
 .landing-page-content::after {
   content: " ";
@@ -13,12 +24,14 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: linear-gradient(
+  background: linear-gradient(rgba(10, 18, 31, 0.7), rgba(10, 18, 31, 0.7));
+  /* background: linear-gradient(
     rgba(10, 18, 31, 0.7),
     rgba(10, 18, 31, 0.7)
-  );
+  ); */
   z-index: 1;
 }
+
 .landing-page-container {
   background-color: var(--background-color);
   width: 100%;
@@ -67,7 +80,7 @@
 }
 .indicator {
   background-color: var(--text-color);
-  width: 1.5rem;
+  width: 2rem;
   height: 0.5rem;
   border-radius: 10px;
   border: none;
@@ -76,7 +89,7 @@
   margin: 0 0.2rem;
 }
 .indicator-disabled {
-  /* background-color: var(--light-grey-color); */
+  background-color: var(--light-grey-color);
   width: 0.5rem;
   height: 0.5rem;
   border-radius: 10px;
@@ -84,4 +97,27 @@
   outline: none;
   cursor: pointer;
   margin: 0 0.2rem;
+}
+
+.header-container {
+  position: absolute;
+  background-color: transparent;
+  z-index: 100;
+}
+
+.header-container h1 {
+  color: var(--primary-color);
+  background-color: transparent;
+  font-size: 80px;
+  font-family: "Inter", sans-serif;
+  font-weight: 900;
+}
+
+.header-container p {
+  color: var(--text-color);
+  background-color: transparent;
+  font-size: 48px;
+  text-align: center;
+  font-family: "Inter", sans-serif;
+  font-weight: 100;
 }

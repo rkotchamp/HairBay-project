@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import NavBar from "../../Components/NavBar/NavBar";
+import UserCards from "../../Components/UserCards/UserCards";
 import { BsArrowLeftCircleFill, BsArrowRightCircleFill } from "react-icons/bs";
 import "./LandingPage.css";
 
@@ -27,6 +28,11 @@ function LandingPage({ data }) {
           className="arrow arrow-left"
           onClick={previousSlide}
         />
+        <NavBar />
+        <div className="header-container">
+          <p>Your Style, Your Rules</p>
+          <h1>Find Your Stylist Today</h1>
+        </div>
         {data.map((item, i) => {
           return (
             <img
@@ -55,6 +61,7 @@ function LandingPage({ data }) {
           })}
         </span>
       </div>
+      <div className="userCards-landingPage-container"></div>
     </div>
   );
 }

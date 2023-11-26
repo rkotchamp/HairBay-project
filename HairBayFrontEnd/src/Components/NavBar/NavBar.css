@@ -6,6 +6,9 @@
   justify-content: space-around;
   align-items: center;
   padding: 20px;
+  top: 0.5rem;
+  background-color: transparent;
+  z-index: 100;
 }
 
 .image {
