@@ -61,7 +61,9 @@ function LandingPage({ data }) {
           })}
         </span>
       </div>
-      <div className="userCards-landingPage-container"></div>
+      <div className="userCards-landingPage-container">
+        <UserCards />
+      </div>
     </div>
   );
 }
