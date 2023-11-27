@@ -1,8 +1,23 @@
+/* :root {
+  --primary-color: #a8895f;
+  --primary-light-color: #a7895c;
+  --call-to-action-color: #657f4e;
+  --background-color: #0a111d;
+  --text-color: #fff;
+  --light-grey-color: #cbcbcb;
+} */
+
 .userCards-container {
   width: 342px;
   height: 302px;
   border-radius: 10px;
   position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.userCards-container:hover {
+  border: 2px solid var(--primary-light-color);
 }
 
 .image-container {
@@ -19,6 +34,8 @@
   top: 0;
   left: 0;
   right: 0;
+  bottom: 0;
+  border-radius: 10px;
   background: linear-gradient(rgba(10, 18, 31, 0.7), rgba(10, 18, 31, 0.7));
   z-index: 100;
 }

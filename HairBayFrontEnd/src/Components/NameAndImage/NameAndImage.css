@@ -1,12 +1,58 @@
+/* :root {
+    --primary-color: #a8895f;
+    --primary-light-color: #a7895c;
+    --call-to-action-color: #657f4e;
+    --background-color: #0a111d;
+    --text-color: #fff;
+    --light-grey-color: #cbcbcb;
+  }
+   */
+
+.nameAndImage-container {
+  background-color: transparent;
+  position: absolute;
+  bottom: 1.5rem;
+  left: 1.5rem;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  z-index: 200;
+}
+
 .nameImage-content {
   width: 45px;
   height: 45px;
   border-radius: 50px;
-  background-color: red;
+  /* background-color: red; */
 }
 .profile-content {
   width: 100%;
   height: 100%;
   border-radius: 50px;
   object-fit: cover;
+}
+.name-location {
+  background: transparent;
+  color: var(--light-grey-color);
+}
+
+.name-location .customers {
+  color: var(--primary-light-color);
+  background-color: transparent;
+  font-weight: 400;
+  font-size: 12px;
+}
+
+.name-location .full-name {
+  background-color: transparent;
+  font-size: 18px;
+  font-weight: 700;
+}
+.name-location .location {
+  background-color: transparent;
+  font-size: 13px;
+  font-weight: 200;
+  color: var(--light-grey-color);
 }
