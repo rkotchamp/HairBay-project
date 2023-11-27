@@ -1,0 +1,36 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "fullName": "Benjamin Cole",
+      "location": "Manhattan, USA",
+      "totalCustomers": "1200",
+      "avatar": "https://images.unsplash.com/photo-1639747280804-dd2d6b3d88ac?q=80&w=987&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "cardCover": "https://images.unsplash.com/photo-1532710093739-9470acff878f?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    },
+    {
+      "id": 2,
+      "fullName": "Emily Davis",
+      "location": "Los Angeles, USA",
+      "totalCustomers": "800",
+      "avatar": "https://images.unsplash.com/photo-1508214751196-bcfd4ca60f91?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "cardCover": "https://images.unsplash.com/photo-1634302086887-13b5585a8831?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    },
+    {
+      "id": 3,
+      "fullName": "Alex Johnson",
+      "location": "Chicago, USA",
+      "totalCustomers": "1500",
+      "avatar": "https://plus.unsplash.com/premium_photo-1671656349322-41de944d259b?q=80&w=987&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "cardCover": "https://images.unsplash.com/photo-1605497788044-5a32c7078486?q=80&w=987&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    },
+    {
+      "id": 4,
+      "fullName": "Sophia Martinez",
+      "location": "Miami, USA",
+      "totalCustomers": "1000",
+      "avatar": "https://images.unsplash.com/photo-1488426862026-3ee34a7d66df?q=80&w=987&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "cardCover": "https://images.unsplash.com/photo-1562322140-8baeececf3df?q=80&w=869&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    }
+  ]
+}
