@@ -31,6 +31,38 @@
       "totalCustomers": "1000",
       "avatar": "https://images.unsplash.com/photo-1488426862026-3ee34a7d66df?q=80&w=987&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       "cardCover": "https://images.unsplash.com/photo-1562322140-8baeececf3df?q=80&w=869&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    },
+    {
+      "id": 5,
+      "fullName": "John Doe",
+      "location": "New York, USA",
+      "totalCustomers": "900",
+      "avatar": "https://images.unsplash.com/photo-1521252659862-eec69941b071?q=80&w=1872&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "cardCover": "https://images.unsplash.com/photo-1622287162716-f311baa1a2b8?q=80&w=2073&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    },
+    {
+      "id": 6,
+      "fullName": "Ava Smith",
+      "location": "San Francisco, USA",
+      "totalCustomers": "1300",
+      "avatar": "https://images.unsplash.com/photo-1624561172888-ac93c696e10c?q=80&w=1978&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "cardCover": "https://images.unsplash.com/photo-1581674210501-c760093514e8?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    },
+    {
+      "id": 7,
+      "fullName": "William Johnson",
+      "location": "Seattle, USA",
+      "totalCustomers": "1100",
+      "avatar": "https://images.unsplash.com/photo-1544723795-3fb6469f5b39?q=80&w=1978&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "cardCover": "https://plus.unsplash.com/premium_photo-1661420297394-a8a9590e93a8?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    },
+    {
+      "id": 8,
+      "fullName": "Olivia White",
+      "location": "Austin, USA",
+      "totalCustomers": "950",
+      "avatar": "https://images.unsplash.com/photo-1639747280804-dd2d6b3d88ac?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "cardCover": "https://images.unsplash.com/photo-1580618672591-eb180b1a973f?q=80&w=2069&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
     }
   ]
 }

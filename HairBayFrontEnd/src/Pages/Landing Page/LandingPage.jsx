@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import NavBar from "../../Components/NavBar/NavBar";
 import UserCards from "../../Components/UserCards/UserCards";
 import { BsArrowLeftCircleFill, BsArrowRightCircleFill } from "react-icons/bs";
+import { users } from "../../data/user-cards.json";
 import "./LandingPage.css";
 
 function LandingPage({ data }) {
@@ -62,7 +63,7 @@ function LandingPage({ data }) {
         </span>
       </div>
       <div className="userCards-landingPage-container">
-        <UserCards />
+        <UserCards users={users} />
       </div>
     </div>
   );

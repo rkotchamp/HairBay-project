@@ -3,13 +3,24 @@ import NameAndImage from "../NameAndImage/NameAndImage";
 
 import "./UserCards.css";
 
-function UserCards() {
+function UserCards({ users }) {
   return (
-    <div className="userCards-container">
-      <NameAndImage />
+    <>
+      {users.map((user) => {
+        return (
+          <div className="userCards-container" key={user.id}>
+            <NameAndImage
+              fullname={user.fullName}
+              location={user.location}
+              totalCustomers={user.totalCustomers}
+              avatar={user.avatar}
+            />
 
-      <img src={image} alt="" className="image-container" />
-    </div>
+            <img src={user.cardCover} alt="" className="image-container" />
+          </div>
+        );
+      })}
+    </>
   );
 }
 
