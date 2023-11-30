@@ -22,13 +22,6 @@
   border: 2px solid var(--primary-light-color);
 }
 
-.image-container {
-  position: relative;
-  width: 100%;
-  height: 100%;
-  border-radius: 10px;
-  object-fit: cover;
-}
 .userCards-container::after {
   content: " ";
   position: absolute;
@@ -41,4 +34,29 @@
   border-radius: 10px;
   background: linear-gradient(rgba(10, 18, 31, 0.8), rgba(10, 18, 31, 0.8));
   z-index: 100;
+}
+.image-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+@media only screen and (max-width: 600px) {
+  .userCards-container {
+    width: 202px;
+    height: 162px;
+  }
+  .userCards-container::after {
+    width: 202px;
+    height: 162px;
+  }
+  .image-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    object-fit: cover;
+  }
 }

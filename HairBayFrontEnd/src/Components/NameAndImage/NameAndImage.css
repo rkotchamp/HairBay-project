@@ -56,3 +56,19 @@
   font-weight: 200;
   color: var(--light-grey-color);
 }
+
+@media only screen and (max-width: 600px) {
+  .name-location .full-name {
+    font-size: 14px;
+  }
+  .name-location .location {
+    font-size: 9px;
+  }
+  .name-location .customers {
+    font-size: 8px;
+  }
+  .nameAndImage-container {
+    bottom: 1rem;
+    left: 1rem;
+  }
+}
