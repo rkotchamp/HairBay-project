@@ -5,6 +5,7 @@ import { BsArrowLeftCircleFill, BsArrowRightCircleFill } from "react-icons/bs";
 import Button from "../../Components/Button/Button";
 import { users } from "../../data/user-cards.json";
 import Footer from "../../Components/Footer/Footer";
+import { Link } from "react-router-dom";
 import "./LandingPage.css";
 
 function LandingPage({ data }) {
@@ -69,7 +70,9 @@ function LandingPage({ data }) {
       <div className="otherSections">
         <div className="additional-info">
           <p className="continue">Continue Explore amazing Hair stylists</p>
-          <Button text="See More" />
+          <Link to="/stylists">
+            <Button text="See More" />
+          </Link>
         </div>
         <Footer />
       </div>
