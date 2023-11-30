@@ -1,0 +1,11 @@
+.sortBy-container {
+  width: 100px;
+  height: 44px;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid var(--primary-light-color);
+  color: var(--text-color);
+  cursor: pointer;
+}

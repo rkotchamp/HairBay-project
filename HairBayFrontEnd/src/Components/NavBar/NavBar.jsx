@@ -4,9 +4,9 @@ import logo from "../../assets/logo.png";
 import UserAvatar from "../UserAvatar/UserAvatar";
 import "./NavBar.css";
 
-function NavBar() {
+function NavBar({ classNameChange }) {
   return (
-    <div className="nav-bar">
+    <div className={classNameChange}>
       <img src={logo} alt="" className="image" />
       <SearchBar />
       <Button text="Sign Up" />

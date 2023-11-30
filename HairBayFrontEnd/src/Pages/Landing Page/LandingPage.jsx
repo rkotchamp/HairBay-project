@@ -4,6 +4,7 @@ import UserCards from "../../Components/UserCards/UserCards";
 import { BsArrowLeftCircleFill, BsArrowRightCircleFill } from "react-icons/bs";
 import Button from "../../Components/Button/Button";
 import { users } from "../../data/user-cards.json";
+import Footer from "../../Components/Footer/Footer";
 import "./LandingPage.css";
 
 function LandingPage({ data }) {
@@ -25,12 +26,11 @@ function LandingPage({ data }) {
   return (
     <div className="landing-page-container">
       <div className="landing-page-content">
-        {/* <NavBar /> */}
         <BsArrowLeftCircleFill
           className="arrow arrow-left"
           onClick={previousSlide}
         />
-        <NavBar />
+        <NavBar classNameChange="nav-bar" />
         <div className="header-container">
           <p>Your Style, Your Rules</p>
           <h1>Find Your Stylist Today</h1>
@@ -68,8 +68,10 @@ function LandingPage({ data }) {
       </div>
       <div className="otherSections">
         <div className="additional-info">
+          <p className="continue">Continue Explore amazing Hair stylists</p>
           <Button text="See More" />
         </div>
+        <Footer />
       </div>
     </div>
   );

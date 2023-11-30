@@ -1,0 +1,15 @@
+/* :root {
+    --primary-color: #a8895f;
+    --primary-light-color: #a7895c;
+    --call-to-action-color: #657f4e;
+    --background-color: #0a111d;
+    --text-color: #fff;
+    --light-grey-color: #cbcbcb;
+  }
+   */
+
+.footer {
+  width: 100%;
+  height: 50px;
+  background-color: var(--primary-color);
+}

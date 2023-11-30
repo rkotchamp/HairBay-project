@@ -10,10 +10,29 @@
   background-color: transparent;
   z-index: 100;
 }
+.newNav-bar {
+  width: 100%;
+  height: 20%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 20px;
+  top: 0.5rem;
+  background-color: transparent;
+  z-index: 100;
+}
 
 .image {
   width: 50px;
   height: 50px;
   color: var(--text-color);
   background-color: var(--text-color);
+}
+@media only screen and (max-width: 600px) {
+  .image {
+    display: none;
+  }
+  .nav-bar {
+    top: 0.9rem;
+  }
 }

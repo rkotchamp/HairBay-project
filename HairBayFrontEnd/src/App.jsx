@@ -1,11 +1,16 @@
 import LandingPage from "./Pages/Landing Page/LandingPage";
 import { slides } from "../src/data/barber-carousel.json";
+import { Route, Routes } from "react-router-dom";
+import UsersPage from "./Pages/UsersPage/UsersPage";
 import "./App.css";
 
 function App() {
   return (
     <>
-      <LandingPage data={slides} />
+      <Routes>
+        <Route path="/" element={<LandingPage data={slides} />} />
+        <Route path="/stylists" element={<UsersPage />} />
+      </Routes>
     </>
   );
 }

@@ -18,3 +18,14 @@
   color: var(--text-color);
   background-color: var(--call-to-action-color);
 }
+
+@media only screen and (max-width: 600px) {
+  .btn {
+    width: 100px;
+    height: 45px;
+    border-radius: 50px;
+    border: none;
+    color: var(--text-color);
+    background-color: var(--call-to-action-color);
+  }
+}

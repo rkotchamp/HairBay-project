@@ -8,6 +8,11 @@
   }
    */
 
+.landing-page-container {
+  background-color: var(--background-color);
+  width: 100%;
+  height: 100vh;
+}
 .landing-page-content {
   position: relative;
   width: 100%;
@@ -27,16 +32,6 @@
   background: linear-gradient(rgba(10, 18, 31, 0.7), rgba(10, 18, 31, 0.7));
 
   z-index: 1;
-}
-
-.landing-page-container {
-  background-color: var(--background-color);
-  width: 100%;
-  height: 100vh;
-  /* display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;  */
 }
 
 .slide {
@@ -125,7 +120,7 @@
 
 .userCards-landingPage-container {
   width: 100%;
-  height: 100%;
+  height: 70%;
   display: grid;
   grid-template-rows: repeat(3, 1fr);
   grid-template-columns: repeat(4, 1fr);
@@ -134,7 +129,23 @@
   gap: 40px 10px;
   padding: 10px;
 }
-
+.continue {
+  color: var(--text-color);
+}
+.otherSections {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.additional-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
 @media only screen and (max-width: 600px) {
   .userCards-landingPage-container {
     width: 100%;
@@ -147,5 +158,34 @@
     gap: 30px 5px;
     padding: 10px;
     /* background-color: red; */
+  }
+  .landing-page-content {
+    position: relative;
+    width: 100%;
+    height: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 0;
+  }
+
+  .header-container h1 {
+    color: var(--primary-color);
+    background-color: transparent;
+    font-size: 30px;
+    font-family: "Inter", sans-serif;
+    font-weight: 900;
+  }
+  .header-container p {
+    color: var(--text-color);
+    background-color: transparent;
+    font-size: 15px;
+    text-align: center;
+    font-family: "Inter", sans-serif;
+    font-weight: 100;
+  }
+  .arrow {
+    width: 1.5rem;
+    height: 1.5rem;
   }
 }
