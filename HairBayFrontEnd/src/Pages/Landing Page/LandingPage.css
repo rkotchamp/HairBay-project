@@ -145,6 +145,7 @@
   align-items: center;
   justify-content: center;
   gap: 10px;
+  margin-bottom: 20px;
 }
 @media only screen and (max-width: 600px) {
   .userCards-landingPage-container {
