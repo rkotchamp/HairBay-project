@@ -5,11 +5,15 @@ import "./UsersPage.css";
 
 const categories = ["All Stylists", "Unisex", "Male", "Female"];
 function UsersPage({ users }) {
-  console.log(users.map((user) => user.category));
   const [activeCategory, setActiveCategory] = useState(0);
-  const [user, setUser] = useState();
-  console.log(activeCategory);
-  console.log(user);
+  const [sorts, setSorts] = useState("All Stylists");
+  console.log(sorts);
+
+  const filteredUsers =
+    sorts === "All Stylists"
+      ? users
+      : users.filter((user) => user.category === sorts);
+
   return (
     <div className="users-page-container">
       <NavBar classNameChange="newNav-bar" />
@@ -23,7 +27,10 @@ function UsersPage({ users }) {
                   : "sortBy-container"
               }
               key={i}
-              onClick={() => setActiveCategory(i)}
+              onClick={() => {
+                setActiveCategory(i);
+                setSorts(categories[i]);
+              }}
             >
               {category}
             </div>
@@ -31,16 +38,7 @@ function UsersPage({ users }) {
         })}
       </div>
       <div className="rendered-users">
-        {users
-          .filter(
-            (user) =>
-              user.category === categories[activeCategory] ||
-              categories[activeCategory] === 0
-          )
-          .map((user, i) => {
-            return <UserCards users={users} key={i} />;
-          })}
-        {/* <UserCards users={users} /> */}
+        <UserCards users={filteredUsers} />
       </div>
     </div>
   );
