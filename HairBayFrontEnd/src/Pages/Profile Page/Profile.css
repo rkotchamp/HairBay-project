@@ -26,11 +26,19 @@
 }
 
 .light--one {
-  width: 180px;
-  width: 180px;
+  width: 160px;
+  width: 160px;
   background-color: var(--primary-color-layer);
   border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  padding: 10px;
 }
-
+.light--two {
+  width: 140px;
+  width: 150px;
+  background-color: red;
+  border-radius: 60%;
+}
 .avatarProfile {
 }
