@@ -1,0 +1,36 @@
+/* :root {
+    --primary-color: #a8895f;
+    --primary-color-layer: #caa977;
+    --primary-light-color: #a7895c;
+    --call-to-action-color: #657f4e;
+    --background-color: #0a111d;
+    --text-color: #fff;
+    --light-grey-color: #cbcbcb;
+  }
+   */
+
+.arrowBack {
+  color: #fff;
+  font-size: 20px;
+}
+
+.profile--avatar {
+  width: 200px;
+  height: 200px;
+  background-color: var(--primary-light-color);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+  /* align-items: center; */
+}
+
+.light--one {
+  width: 180px;
+  width: 180px;
+  background-color: var(--primary-color-layer);
+  border-radius: 50%;
+}
+
+.avatarProfile {
+}
