@@ -75,3 +75,23 @@
   gap: 20px;
   margin: 10px 0;
 }
+.profile-info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 80px;
+}
+
+.type-hairstyle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.text-for-user-details {
+  color: var(--primary-light-color);
+}
+
+.symbol {
+  color: var(--primary-light-color);
+}

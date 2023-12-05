@@ -3,6 +3,7 @@ import { FaAngleLeft } from "react-icons/fa";
 import Button from "../../Components/Button/Button";
 import { MdLocationOn } from "react-icons/md";
 import { BsFillPeopleFill } from "react-icons/bs";
+import { FaBuilding } from "react-icons/fa";
 
 import "./Profile.css";
 
@@ -28,23 +29,23 @@ function Profile() {
           <Button text="Book Now" />
         </div>
         <div className="profile-info">
-          <div className="location">
+          <div className="location type-hairstyle">
             <span>
-              <MdLocationOn />
+              <MdLocationOn className="symbol" />
             </span>
-            <p>Manhattan,USA</p>
+            <p className="text-for-user-details">Manhattan,USA</p>
           </div>
           <div className="type-hairstyle">
             <span>
-              <BsFillPeopleFill />
+              <BsFillPeopleFill className="symbol" />
             </span>
-            <p>Unisex Hairstylist</p>
+            <p className="text-for-user-details">Unisex Hairstylist</p>
           </div>
           <div className="type-hairstyle">
             <span>
-              <BsFillPeopleFill />
+              <FaBuilding className="symbol" />
             </span>
-            <p>Unisex Hairstylist</p>
+            <p className="text-for-user-details">Unisex Hairstylist</p>
           </div>
         </div>
       </div>
