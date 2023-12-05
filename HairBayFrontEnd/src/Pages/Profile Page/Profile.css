@@ -8,37 +8,70 @@
     --light-grey-color: #cbcbcb;
   }
    */
-
+.profile-header {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+  padding: 20px;
+}
 .arrowBack {
-  color: #fff;
-  font-size: 20px;
+  color: var(--primary-color-layer);
+  font-size: 50px;
 }
 
 .profile--avatar {
-  width: 200px;
-  height: 200px;
+  width: 228px;
+  height: 228px;
   background-color: var(--primary-light-color);
   border-radius: 50%;
   display: flex;
   justify-content: center;
-  padding: 10px;
+  align-items: center;
+  padding: 5px;
   /* align-items: center; */
 }
 
 .light--one {
-  width: 160px;
-  width: 160px;
+  width: 202px;
+  height: 202px;
   background-color: var(--primary-color-layer);
   border-radius: 50%;
   display: flex;
   justify-content: center;
+  align-items: center;
   padding: 10px;
 }
 .light--two {
-  width: 140px;
-  width: 150px;
+  width: 164px;
+  height: 164px;
   background-color: red;
-  border-radius: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
 }
 .avatarProfile {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  align-items: center;
+  border-radius: 50%;
+}
+
+.user-profile-name {
+  color: var(--text-color);
+  font-size: 32px;
+}
+.user-header {
+  display: flex;
+  /* justify-content: center; */
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+.profiles-call-to-actions {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin: 10px 0;
 }
