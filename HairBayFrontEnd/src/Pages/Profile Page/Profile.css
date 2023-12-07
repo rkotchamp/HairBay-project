@@ -95,3 +95,33 @@
 .symbol {
   color: var(--primary-light-color);
 }
+
+.user-images {
+  width: 50%;
+  height: 20%;
+  background-color: red;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-template-areas: "one two" "one three";
+  gap: 10px;
+}
+.item-1 {
+  grid-area: one;
+}
+.item-2 {
+  grid-area: two;
+}
+.item-3 {
+  grid-area: three;
+}
+
+.item-container {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.itemImages {
+  width: 100%;
+  height: 100%;
+}
