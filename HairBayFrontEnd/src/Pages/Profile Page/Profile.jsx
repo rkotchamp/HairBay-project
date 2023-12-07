@@ -53,14 +53,17 @@ function Profile() {
             <p className="text-for-user-details">Unisex Hairstylist</p>
           </div>
         </div>
-        <div className="user-images">
-          {userImages.map((item, i) => {
-            return (
-              <div className={`item-container item-${i + 1}`} key={i}>
-                <img src={item} alt="" className="itemImages item-" />
-              </div>
-            );
-          })}
+        <div className="user-image-container">
+          <button className="button">See More</button>
+          <div className="user-images">
+            {userImages.map((item, i) => {
+              return (
+                <div className={`item-container item-${i + 1}`} key={i}>
+                  <img src={item} alt="" className="itemImages item-" />
+                </div>
+              );
+            })}
+          </div>
         </div>
       </div>
     </div>

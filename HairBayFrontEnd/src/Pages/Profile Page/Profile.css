@@ -15,7 +15,7 @@
   padding: 20px;
 }
 .arrowBack {
-  color: var(--primary-color-layer);
+  color: var(--text-color);
   font-size: 50px;
 }
 
@@ -44,7 +44,7 @@
 .light--two {
   width: 164px;
   height: 164px;
-  background-color: red;
+
   display: flex;
   justify-content: center;
   align-items: center;
@@ -95,15 +95,36 @@
 .symbol {
   color: var(--primary-light-color);
 }
+.user-image-container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 10px;
+}
+.button {
+  position: absolute;
+  width: 100px;
+  height: 50px;
+  color: var(--text-color);
+  background-color: var(--primary-light-color);
+  border-radius: 10px;
+  border: none;
+  bottom: 1.9rem;
+  right: 28rem;
+  box-shadow: 1px 1px 30px var(--background-color);
+}
 
 .user-images {
-  width: 50%;
+  width: 60%;
   height: 20%;
-  background-color: red;
+  background-color: var(--light-grey-color);
   display: grid;
   grid-template-columns: 2fr 1fr;
   grid-template-areas: "one two" "one three";
   gap: 10px;
+  padding: 20px;
+  border-radius: 20px;
 }
 .item-1 {
   grid-area: one;
