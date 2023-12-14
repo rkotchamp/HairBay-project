@@ -1,6 +1,9 @@
+import { useState } from "react";
+import CalendarDays from "../CalendarDays/CalendarDays";
 import "./Calendar.css";
 
 function Calendar() {
+  const [state, setState] = useState({ currentDay: new Date() });
   const weekDays = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
   const months = [
     "January",
@@ -17,7 +20,10 @@ function Calendar() {
     "December",
   ];
 
-  const state = { currentDay: new Date() };
+  // const state = { currentDay: new Date() };
+  const changeCurrentDay = (day) => {
+    setState({ currentDay: new Date(day.year, day.month, day.number) });
+  };
 
   return (
     <div className="calendar">
@@ -36,7 +42,11 @@ function Calendar() {
             );
           })}
         </div>
-        <div className="table"></div>
+
+        <CalendarDays
+          day={state.currentDay}
+          changeCurrentDay={changeCurrentDay}
+        />
       </div>
     </div>
   );
