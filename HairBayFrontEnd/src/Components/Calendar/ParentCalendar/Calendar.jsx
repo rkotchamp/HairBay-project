@@ -24,7 +24,7 @@ function Calendar() {
   const changeCurrentDay = (day) => {
     setState({ currentDay: new Date(day.year, day.month, day.number) });
   };
-
+  console.log(state.currentDay.getFullYear());
   return (
     <div className="calendar">
       <div className="calender-header">

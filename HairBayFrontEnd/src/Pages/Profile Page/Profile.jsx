@@ -4,8 +4,9 @@ import Button from "../../Components/Button/Button";
 import { MdLocationOn } from "react-icons/md";
 import { BsFillPeopleFill } from "react-icons/bs";
 import { FaBuilding } from "react-icons/fa";
-
+import Calendar from "../../Components/Calendar/ParentCalendar/Calendar";
 import "./Profile.css";
+
 const userImages = [
   "https://images.unsplash.com/photo-1503951914875-452162b0f3f1?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
   "https://images.unsplash.com/photo-1532710093739-9470acff878f?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDJ8fHxlbnwwfHx8fHw%3D",
@@ -64,6 +65,9 @@ function Profile() {
               );
             })}
           </div>
+        </div>
+        <div className="calendar-and-bookNow">
+          <Calendar />
         </div>
       </div>
     </div>

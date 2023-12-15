@@ -21,7 +21,7 @@
   width: 125px;
   height: 75px;
   position: relative;
-  border: 1px solid var(--primary-color-layer);
+  border: 1px solid var(--background-color);
   background-color: #ffffff;
 }
 
@@ -41,6 +41,6 @@
 }
 
 .selected p {
-  color: #cc0000;
+  color: var(--call-to-action-color);
   font-weight: bold;
 }
