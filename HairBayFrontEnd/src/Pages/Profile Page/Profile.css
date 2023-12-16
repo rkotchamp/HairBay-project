@@ -150,7 +150,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  padding-left: 40px;
+  padding: 40px;
 }
 .calendar-and-bookNow-container h3 {
   color: var(--text-color);
@@ -162,7 +162,6 @@
   align-items: center;
   width: 50%;
   height: 100%;
-  background-color: red;
 }
 
 .bookNow-container {
@@ -181,16 +180,26 @@
 
 .price-heading {
   width: 100%;
-  height: 20px;
+  height: 50px;
   display: flex;
   justify-content: space-around;
+  align-items: center;
   background-color: transparent;
 }
 .price-heading p {
   background-color: transparent;
 }
 .price {
+  font-size: 24px;
   color: var(--text-color);
+  font-weight: 600;
+  background-color: transparent;
+}
+.price span {
+  background-color: transparent;
+  font-weight: 200;
+}
+.ratings {
   background-color: transparent;
 }
 
@@ -198,9 +207,11 @@
   color: var(--text-color);
   background-color: transparent;
 }
+.icon-rating {
+  background-color: transparent;
+}
 
 .icon-rating .icon {
-  background-color: transparent;
   width: 12px;
   height: 12px;
 }

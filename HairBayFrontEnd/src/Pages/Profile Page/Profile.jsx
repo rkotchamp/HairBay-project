@@ -75,16 +75,20 @@ function Profile() {
           <div className="calendarBook">
             <div className="bookNow-container">
               <div className="price-heading">
-                <p className="price">$50 hour</p>
+                <p className="price">
+                  $50 <span>hour</span>
+                </p>
                 <div className="ratings">
                   <p>150</p>
                   <div className="icon-rating">
+                    <LiaStarSolid className="icon" />
+                    <LiaStarSolid className="icon" />
                     <LiaStarSolid className="icon" />
                   </div>
                 </div>
               </div>
 
-              <div></div>
+              <div className=""></div>
             </div>
           </div>
         </div>
