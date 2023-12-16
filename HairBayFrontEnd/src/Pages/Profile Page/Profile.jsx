@@ -5,6 +5,7 @@ import { MdLocationOn } from "react-icons/md";
 import { BsFillPeopleFill } from "react-icons/bs";
 import { FaBuilding } from "react-icons/fa";
 import Calendar from "../../Components/Calendar/ParentCalendar/Calendar";
+import { LiaStarSolid } from "react-icons/lia";
 import "./Profile.css";
 
 const userImages = [
@@ -66,8 +67,26 @@ function Profile() {
             })}
           </div>
         </div>
-        <div className="calendar-and-bookNow">
-          <Calendar />
+        <div className="calendar-and-bookNow-container">
+          <div className="header-and-calendar">
+            <h3>Book Benjamin Cuts now</h3>
+            <Calendar />
+          </div>
+          <div className="calendarBook">
+            <div className="bookNow-container">
+              <div className="price-heading">
+                <p className="price">$50 hour</p>
+                <div className="ratings">
+                  <p>150</p>
+                  <div className="icon-rating">
+                    <LiaStarSolid className="icon" />
+                  </div>
+                </div>
+              </div>
+
+              <div></div>
+            </div>
+          </div>
         </div>
       </div>
     </div>

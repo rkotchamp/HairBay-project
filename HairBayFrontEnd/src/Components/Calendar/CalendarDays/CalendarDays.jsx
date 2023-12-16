@@ -29,7 +29,6 @@ function CalendarDays(props) {
     };
     currentDays.push(calendarDay);
   }
-  console.log(weekdayOfFirstDay);
 
   return (
     <div className="table-content">
