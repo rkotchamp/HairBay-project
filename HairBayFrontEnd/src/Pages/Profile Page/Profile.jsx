@@ -6,6 +6,7 @@ import { BsFillPeopleFill } from "react-icons/bs";
 import { FaBuilding } from "react-icons/fa";
 import Calendar from "../../Components/Calendar/ParentCalendar/Calendar";
 import { LiaStarSolid } from "react-icons/lia";
+import { Link } from "react-router-dom";
 import "./Profile.css";
 
 const userImages = [
@@ -19,7 +20,9 @@ function Profile() {
     <div className="profile-container">
       <div className="profile-content">
         <div className="profile-header">
-          <FaAngleLeft className="arrowBack" />
+          <Link to="/">
+            <FaAngleLeft className="arrowBack" />
+          </Link>
         </div>
         <div className="user-header">
           <div className="profile--avatar">
