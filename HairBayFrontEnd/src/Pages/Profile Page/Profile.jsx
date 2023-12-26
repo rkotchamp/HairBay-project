@@ -76,7 +76,7 @@ function Profile() {
         </div>
         <div className="calendar-and-bookNow-container">
           <div className="header-and-calendar">
-            <h3>Book Benjamin Cuts now</h3>
+            <h3>Book now</h3>
             <Calendar />
           </div>
           <div className="calendarBook">
@@ -95,7 +95,7 @@ function Profile() {
                 </div>
               </div>
 
-              <div className=""></div>
+              <div className="appointment__info"></div>
             </div>
           </div>
         </div>
