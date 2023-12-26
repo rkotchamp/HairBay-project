@@ -215,3 +215,57 @@
   width: 12px;
   height: 12px;
 }
+
+@media only screen and (max-width: 600px) {
+  .profile--avatar {
+    width: 128px;
+    height: 128px;
+  }
+  .light--one {
+    width: 102px;
+    height: 102px;
+  }
+  .light--two {
+    width: 64px;
+    height: 64px;
+  }
+  .user-profile-name {
+    font-size: 22px;
+  }
+  .profile-info {
+    gap: 20px;
+  }
+
+  .textProfile {
+    font-size: 12px;
+  }
+  .button {
+    position: absolute;
+    width: 80px;
+    height: 30px;
+    right: 8rem;
+    font-size: 10px;
+  }
+  .calendar-and-bookNow-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .calendarBook {
+    width: 100%;
+    height: 100%;
+  }
+  .bookNow-container {
+    width: 100%;
+    height: 350px;
+    background-color: var(--primary-light-color);
+    border-radius: 10px;
+  }
+  .header-and-calendar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+}

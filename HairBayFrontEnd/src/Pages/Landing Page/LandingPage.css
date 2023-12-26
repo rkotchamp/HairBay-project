@@ -158,7 +158,6 @@
     align-items: center;
     gap: 30px 5px;
     padding: 10px;
-    /* background-color: red; */
   }
   .landing-page-content {
     position: relative;
@@ -173,7 +172,7 @@
   .header-container h1 {
     color: var(--primary-color);
     background-color: transparent;
-    font-size: 30px;
+    font-size: 20px;
     font-family: "Inter", sans-serif;
     font-weight: 900;
   }
@@ -188,5 +187,8 @@
   .arrow {
     width: 1.5rem;
     height: 1.5rem;
+  }
+  .additional-info {
+    margin-top: 100px;
   }
 }

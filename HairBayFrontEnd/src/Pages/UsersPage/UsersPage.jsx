@@ -7,7 +7,6 @@ const categories = ["All Stylists", "Unisex", "Male", "Female"];
 function UsersPage({ users }) {
   const [activeCategory, setActiveCategory] = useState(0);
   const [sorts, setSorts] = useState("All Stylists");
-  console.log(sorts);
 
   const filteredUsers =
     sorts === "All Stylists"

@@ -22,8 +22,9 @@
 @media only screen and (max-width: 600px) {
   .btn {
     width: 100px;
-    height: 45px;
+    height: 40px;
     border-radius: 50px;
+    font-size: 12px;
     border: none;
     color: var(--text-color);
     background-color: var(--call-to-action-color);

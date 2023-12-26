@@ -30,3 +30,19 @@
   gap: 40px 0px;
   padding: 10px;
 }
+
+@media only screen and (max-width: 600px) {
+  .sortBy-container {
+    width: 120px;
+    height: 40px;
+    font-size: 12px;
+  }
+  .users-page-container {
+    padding: 10px;
+  }
+  .rendered-users {
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
+    padding: 10px;
+  }
+}

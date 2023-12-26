@@ -47,3 +47,20 @@
   font-weight: bold;
   /* background-color: var(--call-to-action-color); */
 }
+
+@media only screen and (max-width: 600px) {
+  .calendar-day {
+    width: 55px;
+    height: 50px;
+    position: relative;
+    border: 1px solid var(--background-color);
+    background-color: var(--light-grey-color);
+  }
+  .current {
+    background-color: var(--text-color);
+  }
+  .selected p {
+    color: var(--call-to-action-color);
+    font-weight: bold;
+  }
+}

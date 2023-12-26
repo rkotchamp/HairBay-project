@@ -43,19 +43,23 @@ function Profile() {
             <span>
               <MdLocationOn className="symbol" />
             </span>
-            <p className="text-for-user-details">Manhattan,USA</p>
+            <p className="text-for-user-details textProfile">Manhattan,USA</p>
           </div>
           <div className="type-hairstyle">
             <span>
               <BsFillPeopleFill className="symbol" />
             </span>
-            <p className="text-for-user-details">Unisex Hairstylist</p>
+            <p className="text-for-user-details textProfile">
+              Unisex Hairstylist
+            </p>
           </div>
           <div className="type-hairstyle">
             <span>
               <FaBuilding className="symbol" />
             </span>
-            <p className="text-for-user-details">Unisex Hairstylist</p>
+            <p className="text-for-user-details textProfile">
+              Unisex Hairstylist
+            </p>
           </div>
         </div>
         <div className="user-image-container">
