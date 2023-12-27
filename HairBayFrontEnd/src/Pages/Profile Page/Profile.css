@@ -260,7 +260,6 @@
 }
 
 .clients {
-  /* color: var(--text-color); */
   background-color: transparent;
 }
 
@@ -275,6 +274,7 @@
 }
 .icon-up {
   background-color: transparent;
+  font-size: 18px;
 }
 
 .client-details {

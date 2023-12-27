@@ -9,6 +9,7 @@ import { LiaStarSolid } from "react-icons/lia";
 import { Link } from "react-router-dom";
 import { FaAngleUp, FaAngleDown } from "react-icons/fa";
 import { useState } from "react";
+import AddCount from "../../Components/AddCount/AddCount";
 import "./Profile.css";
 
 const userImages = [
@@ -129,6 +130,7 @@ function Profile() {
                   </div>
                 </div>
               </div>
+              <AddCount />
             </div>
           </div>
         </div>
