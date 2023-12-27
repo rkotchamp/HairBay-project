@@ -6,15 +6,29 @@
 }
 .adultAndKids {
   background-color: transparent;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+  text-align: center;
 }
-.adults {
+.structure {
   background-color: transparent;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 .adultCounts {
   background-color: transparent;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 5px;
 }
 .icons__style {
   background-color: transparent;
+  color: var(--light-grey-color);
 }
 
 .adults__text {
@@ -26,4 +40,8 @@
 
 .increase__number {
   background-color: transparent;
+}
+.descInfo {
+  background-color: transparent;
+  font-size: 12px;
 }

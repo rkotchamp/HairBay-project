@@ -240,6 +240,7 @@
 .smallText {
   font-size: 12px;
   background-color: transparent;
+  color: var(--light-grey-color);
 }
 .smallText p {
   background-color: transparent;
