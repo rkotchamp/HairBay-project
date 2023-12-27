@@ -230,8 +230,13 @@
 
 .startDate {
   background-color: transparent;
+  border-right: 1px solid var(--light-grey-color);
+  padding: 10px;
 }
-
+.startHours {
+  background-color: transparent;
+  padding: 10px;
+}
 .smallText {
   font-size: 12px;
   background-color: transparent;
@@ -245,6 +250,8 @@
   align-items: center;
   gap: 30px;
   background-color: transparent;
+  border-bottom: 1px solid var(--light-grey-color);
+  padding: 10px;
 }
 .bigText {
   background-color: transparent;
@@ -253,13 +260,33 @@
 }
 
 .clients {
-  color: var(--text-color);
+  /* color: var(--text-color); */
+  background-color: transparent;
 }
 
 .client__title {
   background-color: transparent;
 }
+.client__info {
+  background-color: transparent;
+}
+.upAndDown {
+  background-color: transparent;
+}
+.icon-up {
+  background-color: transparent;
+}
 
+.client-details {
+  background-color: transparent;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  /* margin-top: 20px; */
+  border-bottom: 1px solid var(--light-grey-color);
+}
 @media only screen and (max-width: 600px) {
   .arrowBack {
     color: var(--primary-light-color);

@@ -7,6 +7,8 @@ import { FaBuilding } from "react-icons/fa";
 import Calendar from "../../Components/Calendar/ParentCalendar/Calendar";
 import { LiaStarSolid } from "react-icons/lia";
 import { Link } from "react-router-dom";
+import { FaAngleUp, FaAngleDown } from "react-icons/fa";
+import { useState } from "react";
 import "./Profile.css";
 
 const userImages = [
@@ -16,6 +18,16 @@ const userImages = [
 ];
 
 function Profile() {
+  const [iconUp, setIconUp] = useState(false);
+  const [iconDown, setIconDown] = useState(true);
+
+  const handleUpIcon = () => {
+    setIconDown(!iconDown);
+    setIconUp(!iconUp);
+  };
+  // const handleDownIcon = () => {
+  //   setIconUp(!iconUp);
+  // };
   return (
     <div className="profile-container">
       <div className="profile-content">
@@ -101,18 +113,19 @@ function Profile() {
                     <p className="bigText">START DATE</p>
                     <p className="smallText">11/02/2023</p>
                   </div>
-                  <div className="startDate">
+                  <div className="startHours">
                     <p className="bigText">HOURS</p>
                     <p className="smallText">12:30</p>
                   </div>
                 </div>
-                <div className="">
+                <div className="client-details" onClick={handleUpIcon}>
                   <div className="clients">
-                    <p className="client__title">CLIENTS</p>
-                    <p className="client__title">1 Client</p>
+                    <p className="client__title bigText">CLIENTS</p>
+                    <p className="client__info smallText">1 Client</p>
                   </div>
                   <div className="upAndDown">
-                    <img src="" alt="" />
+                    {iconUp && <FaAngleUp className="icon-up" />}
+                    {iconDown && <FaAngleDown className="icon-up" />}
                   </div>
                 </div>
               </div>
