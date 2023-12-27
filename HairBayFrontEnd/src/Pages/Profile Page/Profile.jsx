@@ -32,7 +32,7 @@ function Profile() {
               </div>
             </div>
           </div>
-          <h3 className="user-profile-name">Benjamin Cutz</h3>
+          <h3 className="user-profile-name">Benjamin Cutz </h3>
         </div>
         <div className="profiles-call-to-actions">
           <Button text="Message" />
@@ -95,7 +95,27 @@ function Profile() {
                 </div>
               </div>
 
-              <div className="appointment__info"></div>
+              <div className="appointment__info">
+                <div className="dateAndHour">
+                  <div className="startDate">
+                    <p className="bigText">START DATE</p>
+                    <p className="smallText">11/02/2023</p>
+                  </div>
+                  <div className="startDate">
+                    <p className="bigText">HOURS</p>
+                    <p className="smallText">12:30</p>
+                  </div>
+                </div>
+                <div className="">
+                  <div className="clients">
+                    <p className="client__title">CLIENTS</p>
+                    <p className="client__title">1 Client</p>
+                  </div>
+                  <div className="upAndDown">
+                    <img src="" alt="" />
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>

@@ -228,6 +228,38 @@
   border-radius: 10px;
 }
 
+.startDate {
+  background-color: transparent;
+}
+
+.smallText {
+  font-size: 12px;
+  background-color: transparent;
+}
+.smallText p {
+  background-color: transparent;
+}
+.dateAndHour {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  background-color: transparent;
+}
+.bigText {
+  background-color: transparent;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.clients {
+  color: var(--text-color);
+}
+
+.client__title {
+  background-color: transparent;
+}
+
 @media only screen and (max-width: 600px) {
   .arrowBack {
     color: var(--primary-light-color);
@@ -251,7 +283,6 @@
   .profile-info {
     gap: 20px;
   }
-
   .textProfile {
     font-size: 12px;
   }
@@ -259,7 +290,7 @@
     position: absolute;
     width: 80px;
     height: 30px;
-    right: 8rem;
+    right: 5rem;
     font-size: 10px;
   }
 
@@ -285,5 +316,8 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+  }
+  .user-images {
+    width: 80%;
   }
 }
