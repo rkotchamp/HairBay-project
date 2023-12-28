@@ -33,6 +33,7 @@
 .icons__style {
   background-color: transparent;
   color: var(--light-grey-color);
+  font-size: 20px;
 }
 
 .adults__text {

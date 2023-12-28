@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 import profile from "../../assets/christopher-campbell-rDEOVtE7vOs-unsplash.jpg";
 
 import "./UserAvatar.css";

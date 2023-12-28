@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import image from "../../assets/neom-rVC6O_gDE0Q-unsplash.jpg";
 import NameAndImage from "../NameAndImage/NameAndImage";
 
