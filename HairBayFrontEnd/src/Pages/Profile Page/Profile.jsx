@@ -22,13 +22,21 @@ function Profile() {
   const [iconUp, setIconUp] = useState(false);
   const [iconDown, setIconDown] = useState(true);
 
+  const [adultCount, setAdultCount] = useState(0);
+  const [childrenCount, setChildrenCount] = useState(0);
+
+  const handleAdultCount = () => {
+    // if (adultCount > 0) {
+    //   setAdultCount(adultCount + 1);
+    // }
+    console.log("heloo");
+  };
+
   const handleUpIcon = () => {
     setIconDown(!iconDown);
     setIconUp(!iconUp);
   };
-  // const handleDownIcon = () => {
-  //   setIconUp(!iconUp);
-  // };
+
   return (
     <div className="profile-container">
       <div className="profile-content">
@@ -130,11 +138,13 @@ function Profile() {
                   </div>
                 </div>
               </div>
-              <AddCount />
             </div>
           </div>
         </div>
       </div>
+      {iconUp && (
+        <AddCount handleAdultCount={handleAdultCount} count={adultCount} />
+      )}
     </div>
   );
 }

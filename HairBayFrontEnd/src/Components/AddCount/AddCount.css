@@ -1,47 +1,53 @@
-.addCount__container {
-  width: 70%;
-  height: 100%;
-  background-color: var(--text-color);
-  border-radius: 10px;
-}
-.adultAndKids {
-  background-color: transparent;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  gap: 20px;
-  padding: 20px;
-  text-align: center;
-}
-.structure {
-  background-color: transparent;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-.adultCounts {
-  background-color: transparent;
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  gap: 5px;
-}
-.icons__style {
-  background-color: transparent;
-  color: var(--light-grey-color);
-}
+@media only screen and (max-width: 600px) {
+  .addCount__container {
+    width: 60%;
+    height: 20%;
+    background-color: var(--text-color);
+    border-radius: 10px;
+    position: absolute;
+    bottom: 0px;
+    top: 1300px;
+    right: 90px;
+  }
+  .adultAndKids {
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+    text-align: center;
+  }
+  .structure {
+    background-color: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .adultCounts {
+    background-color: transparent;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 5px;
+  }
+  .icons__style {
+    background-color: transparent;
+    color: var(--light-grey-color);
+  }
 
-.adults__text {
-  background-color: transparent;
-}
-.adults__text p {
-  background-color: transparent;
-}
+  .adults__text {
+    background-color: transparent;
+  }
+  .adults__text p {
+    background-color: transparent;
+  }
 
-.increase__number {
-  background-color: transparent;
-}
-.descInfo {
-  background-color: transparent;
-  font-size: 12px;
+  .increase__number {
+    background-color: transparent;
+  }
+  .descInfo {
+    background-color: transparent;
+    font-size: 12px;
+  }
 }
