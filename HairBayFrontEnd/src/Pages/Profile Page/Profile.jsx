@@ -140,6 +140,9 @@ function Profile() {
               </div>
             </div>
           </div>
+          <span>
+            <Button text="Book Now" />
+          </span>
         </div>
       </div>
       {iconUp && (
