@@ -5,7 +5,7 @@ import { BsArrowLeftCircleFill, BsArrowRightCircleFill } from "react-icons/bs";
 import Button from "../../Components/Button/Button";
 import { users } from "../../data/user-cards.json";
 import Footer from "../../Components/Footer/Footer";
-import { Link } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 import "./LandingPage.css";
 
 function LandingPage({ data }) {
@@ -24,6 +24,7 @@ function LandingPage({ data }) {
     }, 8000);
     return () => clearInterval(intervalID);
   });
+
   return (
     <div className="landing-page-container">
       <div className="landing-page-content">
