@@ -13,7 +13,7 @@ function App() {
       <Routes>
         <Route path="/" element={<LandingPage data={slides} />} />
         <Route path="/stylists" element={<UsersPage users={users} />} />
-        <Route path="/profile:id" element={<Profile users={users} />} />
+        <Route path="/profile/:id" element={<Profile users={users} />} />
         <Route path="/calendar" element={<Calendar />} />
       </Routes>
     </>

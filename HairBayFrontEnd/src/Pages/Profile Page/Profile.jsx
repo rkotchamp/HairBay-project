@@ -6,7 +6,7 @@ import { BsFillPeopleFill } from "react-icons/bs";
 import { FaBuilding } from "react-icons/fa";
 import Calendar from "../../Components/Calendar/ParentCalendar/Calendar";
 import { LiaStarSolid } from "react-icons/lia";
-import { Link } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 import { FaAngleUp, FaAngleDown } from "react-icons/fa";
 import { useState } from "react";
 import AddCount from "../../Components/AddCount/AddCount";
@@ -18,7 +18,7 @@ const userImages = [
   "https://images.unsplash.com/photo-1488282687151-c5e6582e7cf1?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
 ];
 
-function Profile() {
+function Profile({ users }) {
   const [iconUp, setIconUp] = useState(false);
   const [iconDown, setIconDown] = useState(true);
 
@@ -29,13 +29,18 @@ function Profile() {
     // if (adultCount > 0) {
     //   setAdultCount(adultCount + 1);
     // }
-    console.log("heloo");
   };
 
   const handleUpIcon = () => {
     setIconDown(!iconDown);
     setIconUp(!iconUp);
   };
+
+  console.log(users);
+  const { id } = useParams();
+  const userData = users.find((u) => u.id === Number(id));
+
+  console.log(userData.environment);
 
   return (
     <div className="profile-container">
@@ -49,11 +54,15 @@ function Profile() {
           <div className="profile--avatar">
             <div className="light--background light--one">
               <div className="light--background light--two">
-                <img src={ProfileAvatar} alt="" className="avatarProfile" />
+                <img
+                  src={userData.avatar}
+                  alt={userData.fullName}
+                  className="avatarProfile"
+                />
               </div>
             </div>
           </div>
-          <h3 className="user-profile-name">Benjamin Cutz </h3>
+          <h3 className="user-profile-name">{userData.fullName}</h3>
         </div>
         <div className="profiles-call-to-actions">
           <Button text="Message" />
@@ -64,14 +73,16 @@ function Profile() {
             <span>
               <MdLocationOn className="symbol" />
             </span>
-            <p className="text-for-user-details textProfile">Manhattan,USA</p>
+            <p className="text-for-user-details textProfile">
+              {userData.location}
+            </p>
           </div>
           <div className="type-hairstyle">
             <span>
               <BsFillPeopleFill className="symbol" />
             </span>
             <p className="text-for-user-details textProfile">
-              Unisex Hairstylist
+              {userData.category} Stylist
             </p>
           </div>
           <div className="type-hairstyle">
@@ -79,7 +90,7 @@ function Profile() {
               <FaBuilding className="symbol" />
             </span>
             <p className="text-for-user-details textProfile">
-              Unisex Hairstylist
+              {userData.environment}
             </p>
           </div>
         </div>
