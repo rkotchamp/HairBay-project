@@ -8,10 +8,73 @@
   }
    */
 
+body {
+  color: var(--text-color);
+}
+.confirmation__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100vh;
+  gap: 40px;
+}
 .icon__back {
   color: var(--primary-color);
+  font-size: 40px;
 }
 
 .book__header {
   color: var(--primary-color);
+}
+
+.user__container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.headers__content__container {
+  display: flex;
+  justify-content: center;
+}
+
+.headers__content {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+}
+.confirm__avatar {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+}
+
+.confirm__avatar__image {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.user__name {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.user__location {
+  font-size: 12px;
+  color: var(--light-grey-color);
+}
+
+.stylist__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.confirm__booking {
+  width: 50%;
+  height: 50%;
+  border: 1px solid var(--primary-color);
 }

@@ -70,7 +70,7 @@ function LandingPage({ data }) {
       </div>
       <div className="otherSections">
         <div className="additional-info">
-          <p className="continue">Continue Explore amazing Hair stylists</p>
+          <p className="continue">Continue Exploring amazing Hair stylists</p>
           <Link to="/stylists">
             <Button text="See More" />
           </Link>
