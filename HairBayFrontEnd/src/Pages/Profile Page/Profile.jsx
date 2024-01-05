@@ -150,10 +150,12 @@ function Profile({ users }) {
                 </div>
               </div>
             </div>
+            <span>
+              <Link to="/confirm">
+                <Button text="Book Now" />
+              </Link>
+            </span>
           </div>
-          <span>
-            <Button text="Book Now" />
-          </span>
         </div>
       </div>
       {iconUp && (

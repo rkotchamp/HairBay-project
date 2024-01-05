@@ -1,0 +1,17 @@
+/* :root {
+    --primary-color: #a8895f;
+    --primary-light-color: #a7895c;
+    --call-to-action-color: #657f4e;
+    --background-color: #0a111d;
+    --text-color: #fff;
+    --light-grey-color: #cbcbcb;
+  }
+   */
+
+.icon__back {
+  color: var(--primary-color);
+}
+
+.book__header {
+  color: var(--primary-color);
+}
