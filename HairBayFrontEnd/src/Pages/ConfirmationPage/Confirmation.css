@@ -34,15 +34,17 @@ body {
   align-items: center;
   gap: 10px;
 }
-.headers__content__container {
+/* .headers__content__container {
+  width: 100%;
   display: flex;
   justify-content: center;
-}
+} */
 
 .headers__content {
   width: 100%;
   display: flex;
   justify-content: space-evenly;
+  padding-right: 400px;
 }
 .confirm__avatar {
   width: 70px;
@@ -71,8 +73,12 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  gap: 30px;
 }
-
+.stylist__text {
+  color: var(--primary-color);
+  font-size: 20px;
+}
 .confirm__booking {
   width: 50%;
   height: 50%;

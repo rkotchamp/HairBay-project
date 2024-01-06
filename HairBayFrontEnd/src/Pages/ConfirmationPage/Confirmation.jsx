@@ -6,14 +6,13 @@ import "./Confirmation.css";
 function Confirmation() {
   return (
     <div className="confirmation__container">
-      <div className="headers__content__container">
-        <div className="headers__content">
-          <FaAngleLeft className="icon__back" />
-          <h1 className="book__header">Booking Details</h1>
-        </div>
+      <div className="headers__content">
+        <FaAngleLeft className="icon__back" />
+        <h1 className="book__header">Booking Details</h1>
       </div>
+
       <div className="stylist__container">
-        <p>Your Hair stylist</p>
+        <p className="stylist__text">Your Hair stylist</p>
         <div className="user__container">
           <div className="confirm__avatar">
             <img
