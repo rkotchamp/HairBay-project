@@ -16,7 +16,7 @@ function App() {
         <Route path="/stylists" element={<UsersPage users={users} />} />
         <Route path="/profile/:id" element={<Profile users={users} />} />
         <Route path="/calendar" element={<Calendar />} />
-        <Route path="/confirm" element={<Confirmation />} />
+        <Route path="/confirm/:id" element={<Confirmation users={users} />} />
       </Routes>
     </>
   );

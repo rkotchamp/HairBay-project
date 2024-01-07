@@ -36,7 +36,6 @@ function Profile({ users }) {
     setIconUp(!iconUp);
   };
 
-  console.log(users);
   const { id } = useParams();
   const userData = users.find((u) => u.id === Number(id));
 
@@ -151,7 +150,7 @@ function Profile({ users }) {
               </div>
             </div>
             <span>
-              <Link to="/confirm">
+              <Link to={`/confirm/${id}`}>
                 <Button text="Book Now" />
               </Link>
             </span>

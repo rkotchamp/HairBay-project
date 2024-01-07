@@ -1,13 +1,21 @@
 import profile from "../../assets/christopher-campbell-rDEOVtE7vOs-unsplash.jpg";
+import Button from "../../Components/Button/Button";
+import { Link, useParams } from "react-router-dom";
 import { FaAngleLeft } from "react-icons/fa";
 
 import "./Confirmation.css";
 
-function Confirmation() {
+function Confirmation({ users }) {
+  const { id } = useParams();
+  const userConfirmed = users.find((u) => u.id === Number(id));
+  console.log(userConfirmed);
+
   return (
     <div className="confirmation__container">
       <div className="headers__content">
-        <FaAngleLeft className="icon__back" />
+        <Link to={`/profile/${id}`}>
+          <FaAngleLeft className="icon__back" />
+        </Link>
         <h1 className="book__header">Booking Details</h1>
       </div>
 
@@ -16,35 +24,39 @@ function Confirmation() {
         <div className="user__container">
           <div className="confirm__avatar">
             <img
-              src={profile}
+              src={userConfirmed.avatar}
               alt="user avatar"
               className="confirm__avatar__image"
             />
           </div>
           <div className="user__info">
-            <p className="user__name">Benjamin Cutz</p>
-            <p className="user__location">Manhattan, USA</p>
+            <p className="user__name">{userConfirmed.fullName}</p>
+            <p className="user__location">{userConfirmed.location}</p>
           </div>
         </div>
       </div>
       <div className="confirm__booking">
         <div className="dates__hours__edit info">
           <div className="dates__hours">
-            <p>Date</p>
-            <span>
-              <p>Feb 12</p>
-              <p>3 hours</p>
-            </span>
+            <div className="date__text_layout">
+              <p className="boldText">Date</p>
+              <div className="date">
+                <p className="smallText">Feb 12</p>
+                <p className="smallText">3 hours</p>
+              </div>
+            </div>
           </div>
-          <p>Edit</p>
+          <p className="edit">Edit</p>
         </div>
         <div className="clients info">
-          <div className="dates__hours">
-            <p>Date</p>
+          <div className="client__details dates__hours">
+            <p className="boldText">Client</p>
+            <p className="smallText">1 Client</p>
           </div>
-          <p>Edit</p>
+          <p className="edit">Edit</p>
         </div>
       </div>
+      <Button text="Continue" />
     </div>
   );
 }
