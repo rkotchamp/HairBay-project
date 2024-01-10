@@ -4,7 +4,14 @@ import { useState } from "react";
 
 import "./AddCount.css";
 
-function AddCount({ handleAdultCount, count }) {
+function AddCount({
+  handleAdultCount,
+  countOne,
+  handleMinusAdultCount,
+  minusCount,
+  plusCount,
+  countTwo,
+}) {
   return (
     <div className="addCount__container">
       <div className="adultAndKids">
@@ -16,10 +23,13 @@ function AddCount({ handleAdultCount, count }) {
           <div className="adultCounts">
             <AiOutlineMinusCircle
               className="icons__style"
+              onClick={handleMinusAdultCount}
+            />
+            <p className="increase__number">{countOne}</p>
+            <IoAddCircleOutline
+              className="icons__style"
               onClick={handleAdultCount}
             />
-            <p className="increase__number">{count}</p>
-            <IoAddCircleOutline className="icons__style" />
           </div>
         </div>
         <div className="children structure">
@@ -30,10 +40,10 @@ function AddCount({ handleAdultCount, count }) {
           <div className="adultCounts">
             <AiOutlineMinusCircle
               className="icons__style"
-              onClick={handleAdultCount}
+              onClick={minusCount}
             />
-            <p className="increase__number">2</p>
-            <IoAddCircleOutline className="icons__style" />
+            <p className="increase__number">{countTwo}</p>
+            <IoAddCircleOutline className="icons__style" onClick={plusCount} />
           </div>
         </div>
         <p className="descInfo">

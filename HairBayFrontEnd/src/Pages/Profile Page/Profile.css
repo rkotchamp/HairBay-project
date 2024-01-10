@@ -283,6 +283,7 @@
 .icon-up {
   background-color: transparent;
   font-size: 18px;
+  color: var(--background-color);
 }
 
 .client-details {

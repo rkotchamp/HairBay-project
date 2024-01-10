@@ -32,7 +32,7 @@
 }
 .icons__style {
   background-color: transparent;
-  color: var(--light-grey-color);
+  color: var(--background-color);
   font-size: 20px;
 }
 
@@ -45,10 +45,12 @@
 
 .increase__number {
   background-color: transparent;
+  color: var(--background-color);
 }
 .descInfo {
   background-color: transparent;
   font-size: 12px;
+  color: var(--light-grey-color);
 }
 
 @media only screen and (max-width: 600px) {

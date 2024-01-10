@@ -27,7 +27,22 @@ function Profile({ users }) {
 
   const handleAdultCount = () => {
     // if (adultCount > 0) {
-    //   setAdultCount(adultCount + 1);
+    setAdultCount(adultCount + 1);
+    // }
+  };
+  const handleMinusAdultCount = () => {
+    if (adultCount > 0) {
+      setAdultCount(adultCount - 1);
+    }
+  };
+  const minusCount = () => {
+    if (childrenCount > 0) {
+      setChildrenCount(childrenCount - 1);
+    }
+  };
+  const plusCount = () => {
+    // if (childrenCount > 0) {
+    setChildrenCount(childrenCount + 1);
     // }
   };
 
@@ -158,7 +173,14 @@ function Profile({ users }) {
         </div>
       </div>
       {iconUp && (
-        <AddCount handleAdultCount={handleAdultCount} count={adultCount} />
+        <AddCount
+          handleAdultCount={handleAdultCount}
+          countOne={adultCount}
+          countTwo={childrenCount}
+          handleMinusAdultCount={handleMinusAdultCount}
+          minusCount={minusCount}
+          plusCount={plusCount}
+        />
       )}
     </div>
   );

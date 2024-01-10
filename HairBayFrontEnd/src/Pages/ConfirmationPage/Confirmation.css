@@ -133,5 +133,5 @@ body {
 
 .smallText {
   font-size: 12px;
-  color: var(--light-grey-color);
+  color: var(--background-color);
 }
