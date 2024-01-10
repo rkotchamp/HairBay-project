@@ -1,4 +1,3 @@
-import profile from "../../assets/christopher-campbell-rDEOVtE7vOs-unsplash.jpg";
 import Button from "../../Components/Button/Button";
 import { Link, useParams } from "react-router-dom";
 import { FaAngleLeft } from "react-icons/fa";
