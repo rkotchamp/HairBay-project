@@ -8,8 +8,9 @@ import Calendar from "../../Components/Calendar/ParentCalendar/Calendar";
 import { LiaStarSolid } from "react-icons/lia";
 import { Link, useParams } from "react-router-dom";
 import { FaAngleUp, FaAngleDown } from "react-icons/fa";
-import { useState } from "react";
+import { useState, useContext } from "react";
 import AddCount from "../../Components/AddCount/AddCount";
+import UserContext from "../../Context/UserContext";
 import "./Profile.css";
 
 const userImages = [
@@ -19,6 +20,7 @@ const userImages = [
 ];
 
 function Profile({ users }) {
+  const { setUsers } = useContext(UserContext);
   const [iconUp, setIconUp] = useState(false);
   const [iconDown, setIconDown] = useState(true);
 
@@ -27,14 +29,24 @@ function Profile({ users }) {
 
   const handleAdultCount = () => {
     // if (adultCount > 0) {
-    setAdultCount(adultCount + 1);
+    setAdultCount((prevAdultCount) => prevAdultCount + 1);
     // }
+    setUsers((prevUsers) => ({
+      ...prevUsers,
+      adult: adultCount + 1,
+    }));
   };
+
   const handleMinusAdultCount = () => {
     if (adultCount > 0) {
       setAdultCount(adultCount - 1);
     }
+    setUsers((prevUsers) => ({
+      ...prevUsers,
+      adult: adultCount - 1,
+    }));
   };
+
   const minusCount = () => {
     if (childrenCount > 0) {
       setChildrenCount(childrenCount - 1);

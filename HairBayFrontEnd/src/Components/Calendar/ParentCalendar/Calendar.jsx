@@ -1,9 +1,14 @@
-import { useState } from "react";
+import { useState, useContext } from "react";
 import CalendarDays from "../CalendarDays/CalendarDays";
+import UserContext from "../../../Context/UserContext";
+
 import "./Calendar.css";
 
 function Calendar() {
   const [state, setState] = useState({ currentDay: new Date() });
+
+  const { user, setUsers } = useContext(UserContext);
+
   const weekDays = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
   const months = [
     "January",
@@ -22,8 +27,18 @@ function Calendar() {
 
   // const state = { currentDay: new Date() };
   const changeCurrentDay = (day) => {
-    setState({ currentDay: new Date(day.year, day.month, day.number) });
+    const newDate = new Date(day.year, day.month, day.number);
+    setState({ currentDay: newDate });
+    // setUsers({ date: state.currentDay });
+    const theMonth = months[newDate.getMonth()];
+    const theDay = newDate.getDate();
+    // const newDate = state.currentDay.getDate();
+    setUsers((prevUsers) => ({
+      ...prevUsers,
+      date: `${theMonth} ${theDay}`,
+    }));
   };
+  console.log(user);
 
   return (
     <div className="calendar">

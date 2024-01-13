@@ -1,13 +1,15 @@
+import { useContext } from "react";
 import Button from "../../Components/Button/Button";
 import { Link, useParams } from "react-router-dom";
 import { FaAngleLeft } from "react-icons/fa";
+import UserContext from "../../Context/UserContext";
 
 import "./Confirmation.css";
 
 function Confirmation({ users }) {
   const { id } = useParams();
   const userConfirmed = users.find((u) => u.id === Number(id));
-  console.log(userConfirmed);
+  const { user, setUsers } = useContext(UserContext);
 
   return (
     <div className="confirmation__container">
@@ -40,8 +42,8 @@ function Confirmation({ users }) {
             <div className="date__text_layout">
               <p className="boldText">Date</p>
               <div className="date">
-                <p className="smallText">Feb 12</p>
-                <p className="smallText">3 hours</p>
+                <p className="smallTextConfirm">{user.date}</p>
+                <p className="smallTextConfirm">3 hours</p>
               </div>
             </div>
           </div>
@@ -50,7 +52,7 @@ function Confirmation({ users }) {
         <div className="clients info">
           <div className="client__details dates__hours">
             <p className="boldText">Client</p>
-            <p className="smallText">1 Client</p>
+            <p className="smallTextConfirm">{user.adult} Client</p>
           </div>
           <p className="edit">Edit</p>
         </div>
