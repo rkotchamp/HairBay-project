@@ -57,7 +57,9 @@ function Confirmation({ users }) {
           <p className="edit">Edit</p>
         </div>
       </div>
-      <Button text="Continue" />
+      <Link to="/payment">
+        <Button text="Continue" />
+      </Link>
     </div>
   );
 }

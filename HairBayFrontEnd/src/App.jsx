@@ -6,6 +6,7 @@ import { users } from "./data/user-cards.json";
 import Profile from "./Pages/Profile Page/Profile";
 import Calendar from "./Components/Calendar/ParentCalendar/Calendar";
 import Confirmation from "../src/Pages/ConfirmationPage/Confirmation";
+import Checkout from "./Pages/CheckoutPage/Checkout";
 import "./App.css";
 
 function App() {
@@ -17,6 +18,7 @@ function App() {
         <Route path="/profile/:id" element={<Profile users={users} />} />
         <Route path="/calendar" element={<Calendar />} />
         <Route path="/confirm/:id" element={<Confirmation users={users} />} />
+        <Route path="/payment" element={<Checkout users={users} />} />
       </Routes>
     </>
   );

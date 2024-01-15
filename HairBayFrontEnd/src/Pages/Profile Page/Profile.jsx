@@ -20,7 +20,7 @@ const userImages = [
 ];
 
 function Profile({ users }) {
-  const { setUsers } = useContext(UserContext);
+  const { user, setUsers } = useContext(UserContext);
   const [iconUp, setIconUp] = useState(false);
   const [iconDown, setIconDown] = useState(true);
 
@@ -65,8 +65,6 @@ function Profile({ users }) {
 
   const { id } = useParams();
   const userData = users.find((u) => u.id === Number(id));
-
-  console.log(userData.environment);
 
   return (
     <div className="profile-container">
@@ -157,7 +155,9 @@ function Profile({ users }) {
                 <div className="dateAndHour">
                   <div className="startDate">
                     <p className="bigText">START DATE</p>
-                    <p className="smallText">11/02/2023</p>
+                    <p className="smallText">
+                      {user.date ? user.date : "mm / yy"}
+                    </p>
                   </div>
                   <div className="startHours">
                     <p className="bigText">HOURS</p>
