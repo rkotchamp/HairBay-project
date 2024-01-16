@@ -1,7 +1,82 @@
 .payment__container {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   width: 100%;
   height: 100vh;
+  gap: 40px;
+}
+
+.payment__header__content {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  padding-right: 400px;
+}
+.payment__header__content .back_icon {
+  color: var(--primary-color);
+  font-size: 40px;
+}
+.payment__header__content .checkout_header {
+  color: var(--primary-color);
+}
+.boxes__container {
+  width: 100%;
+  height: 70vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  gap: 20px;
+  /* background-color: red; */
+}
+
+.payment__details {
+  width: 40%;
+  height: 60%;
+  border: 1px solid var(--primary-color);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.payment__card__details {
+  width: 50%;
+  height: 100%;
+  background-color: var(--primary-color);
+}
+
+.form__container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+  gap: 10px;
+}
+
+.label__containers {
+  width: 70%;
+  background-color: transparent;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.inputs {
+  background-color: var(--text-color);
+  height: 50px;
+}
+.labels {
+  background-color: transparent;
+}
+
+.lining {
+  width: 90%;
+
+  border-bottom: 1px solid var(--primary-color);
+  height: 100%;
 }
