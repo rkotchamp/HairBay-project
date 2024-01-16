@@ -43,9 +43,10 @@
 }
 
 .payment__card__details {
-  width: 50%;
-  height: 100%;
+  width: 40%;
+  height: 90%;
   background-color: var(--primary-color);
+  border-radius: 10px;
 }
 
 .form__container {
@@ -79,4 +80,20 @@
 
   border-bottom: 1px solid var(--primary-color);
   height: 100%;
+}
+.dates {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.client__detail {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.totalPrice {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
