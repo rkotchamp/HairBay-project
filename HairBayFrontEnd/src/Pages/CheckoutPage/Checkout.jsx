@@ -66,29 +66,31 @@ function Checkout() {
                 className="inputs"
               />
             </div>
-            <div className="expiration label__containers">
-              <label htmlFor="expiration" className="labels">
-                Exp
-              </label>
-              <input
-                type="date"
-                name="expiration"
-                id="expiration"
-                placeholder="mm/yy"
-                className="inputs"
-              />
-            </div>
-            <div className="cvv label__containers">
-              <label htmlFor="cvv" className="labels">
-                Cvv
-              </label>
-              <input
-                type="number"
-                name="cvv"
-                id="cvv"
-                placeholder="cvv"
-                className="inputs"
-              />
+            <div className="expAndCvv">
+              <div className="expiration label__containers">
+                <label htmlFor="expiration" className="labels">
+                  Exp
+                </label>
+                <input
+                  type="date"
+                  name="expiration"
+                  id="expiration"
+                  placeholder="mm/yy"
+                  className="inputs"
+                />
+              </div>
+              <div className="cvv label__containers">
+                <label htmlFor="cvv" className="labels">
+                  Cvv
+                </label>
+                <input
+                  type="number"
+                  name="cvv"
+                  id="cvv"
+                  placeholder="cvv"
+                  className="inputs"
+                />
+              </div>
             </div>
           </form>
         </div>
