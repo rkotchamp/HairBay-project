@@ -1,3 +1,4 @@
+import Button from "../../Components/Button/Button";
 import { FaAngleLeft } from "react-icons/fa";
 import "./Checkout.css";
 
@@ -92,6 +93,7 @@ function Checkout() {
                 />
               </div>
             </div>
+            <Button text="Proceed to pay" />
           </form>
         </div>
       </div>
